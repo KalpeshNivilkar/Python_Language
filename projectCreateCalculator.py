@@ -12,7 +12,14 @@ def cal(num_1, num_2):
     choice = input("Enter your choice :")
     finalChoice = choice.lower
 
-    if choice == sum:
+    if finalChoice == sum:
         return num_1 + num_2
+    elif finalChoice == sub:
+        return num_1 - num_2
+    elif finalChoice == mul:
+        return num_1 * num_2
+    else:
+        return num_1 / num_2
+
 
 
