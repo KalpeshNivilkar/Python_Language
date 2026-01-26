@@ -1,25 +1,27 @@
-
-
-def cal(num_1, num_2):
-    add = 0
-    subt = 0
-    division = 0
-    multiplication = 0
+def cal():
     print("Calculator!")
-    num_1 = int(input("Enter the first number : "))
-    num_2 = int(input("Enter the second number :"))
-    print("choices: SUM,SUB,DIV,MUL")
-    choice = input("Enter your choice :")
-    finalChoice = choice.lower
 
-    if finalChoice == sum:
-        return num_1 + num_2
-    elif finalChoice == sub:
-        return num_1 - num_2
-    elif finalChoice == mul:
-        return num_1 * num_2
+    num_1 = int(input("Enter the first number: "))
+    num_2 = int(input("Enter the second number: "))
+
+    print("Choices: sum, sub, div, mul")
+    choice = input("Enter your choice: ").lower()
+
+    if choice == "sum":
+        print("Result:", num_1 + num_2)
+
+    elif choice == "sub":
+        print("Result:", num_1 - num_2)
+
+    elif choice == "mul":
+        print("Result:", num_1 * num_2)
+
+    elif choice == "div":
+        if num_2 != 0:
+            print("Result:", num_1 / num_2)
+        else:
+            print("Cannot divide by zero")
+
     else:
-        return num_1 / num_2
-
-
-
+        print("Invalid choice")
+cal()
