@@ -33,7 +33,7 @@ def result(marks):
     elif marks < 80 and marks > 60:
         print("Grade C")
     else:
-        print("You are fail your marks is : ", marks, "\nbetter luck next time :)")
+        print("You are fail your marks is : ",marks, "\nbetter luck next time :)")
 
 marks = int(input("Enter your marks :"))
 result(marks)
